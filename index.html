@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Tarlac Road Watcher</title>
+        <link href="assets/css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="assets/css/materialize.css" rel="stylesheet">
+        <link href="assets/css/style.css" rel="stylesheet">
+
+        <script src="assets/js/jquery-3.4.1.js"></script>
+        <script src="assets/js/Chart.bundle.js"></script>
+        <script src="assets/js/vue.js"></script>
+        <script src="assets/js/vue-router.js"></script>
+        <script src="assets/js/axios.min.js"></script>
+        <script src="assets/js/moment.js"></script>
+        <script src="assets/js/materialize.js"></script>
+
+        <!-- Views -->
+        <script src="views/login.js"></script>
+        <script src="views/main.js"></script>
+
+        <!-- Components -->
+        <script src="components/nav.js"></script>
+
+        
+    </head>
+<body>
+    <div id="app">
+        <router-view></router-view>
+    </div>
+</body>
+
+</html>
+
+<script>
+    
+
+    Vue.use(VueRouter);
+
+    const routes = [
+        {
+            path: '/',
+        component: loginView
+        },
+        {
+            path:'/main',
+            component: mainView
+        }
+    ]
+    let router = new VueRouter({
+        routes
+    })
+
+    var app = new Vue({
+        el: '#app',
+        router,
+        data() {
+            return {
+                
+            }
+        },
+    })
+   
+
+
+</script>

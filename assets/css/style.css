@@ -1,0 +1,46 @@
+﻿body{
+
+  background-color: #ddd;
+}
+
+/* FOR MAIN SIDENAV.  DO NOT TOUCH */
+header, main, footer {
+    padding-left: 100px;
+  }
+
+  @media only screen and (max-width : 992px) {
+    header, main, footer {
+      padding-left: 0;
+    }
+  }
+
+  #nav-btn {
+    text-align: center;
+    padding: 0 8px !important;
+}
+
+
+.sidenav {
+    width: 100px !important;
+    box-shadow: none !important;
+}
+
+    .sidenav .user-view {
+        padding: 8px 8px 0 !important;
+    }
+
+    .sidenav .collapsible-header {
+        padding: 0 32px;
+    }
+
+    .sidenav li > a {
+        height: 100%;
+    }
+
+        .sidenav li > a > i.material-icons {
+            height: 24px;
+            width: 100% !important;
+        }
+
+  
+/* FOR MAIN SIDENAV.  DO NOT TOUCH */

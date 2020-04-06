@@ -30,7 +30,7 @@ var employeesView = Vue.component("employees-view", {
         <td><p>Jessie Andrewson Williams</p></td>
         <td><p>E000001</p></td>
         <td>March 04, 2020 4:22PM</td>
-        <td><a class="btn-floating waves-effect waves-light red" style="box-shadow: none !important;"><i class="material-icons">add</i></a></td>
+        <td><a class="btn-floating waves-effect waves-light blue" style="box-shadow: none !important;"><i class="material-icons">pageview</i></a><a class="btn-floating waves-effect waves-light red" style="box-shadow: none !important;"><i class="material-icons">person_outline</i></a></td>
         </tr>
         </tbody>
         </table>

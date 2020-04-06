@@ -19,22 +19,22 @@ var sidenav = Vue.component("side-nav", {
   <li><a href="#!">My Profile</a></li>
   <li><a href="#!">Settings</a></li>
   <li class="divider"></li>
-  <li><router-link to="/">Logout</router-></li>
+  <li><router-link to="/">Logout</router-link></li>
 </ul>
     </div>
   </nav>
 
     <ul id="slide-out" class="sidenav sidenav-fixed blue darken-4">
-      <nav-button link="/" icon="dashboard" text="Dashboard"></nav-button>
+      <nav-button link="/main" icon="dashboard" text="Dashboard"></nav-button>
       <li><div class="divider blue accent-2"></div></li>
-      <nav-button link="/" icon="person" text="Employees"></nav-button>
+      <nav-button link="/main/employees" icon="person" text="Employees"></nav-button>
       <nav-button link="/" icon="drive_eta" text="Drivers"></nav-button>
       <li><div class="divider blue accent-2"></div></li>
       <nav-button link="/" icon="airport_shuttle" text="Transport"></nav-button>
       <nav-button link="/" icon="report" text="Violations"></nav-button>
       <li><div class="divider blue accent-2"></div></li>
       <nav-button link="/" icon="poll" text="Statistics"></nav-button>
-      <nav-button link="/" icon="chrome_reader_mode" text="Documentation"></nav-button>
+      <nav-button link="/main/documentation" icon="chrome_reader_mode" text="Documentation"></nav-button>
     </ul>
   
     </div>`

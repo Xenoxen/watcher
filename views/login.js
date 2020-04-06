@@ -7,7 +7,7 @@ var loginView = Vue.component('login-view', {
     <form>
       <div class="card-content">
 <div class="center-align" style="padding: 30px;">
-<img style="width: 200px;" src="assets/img/soms-logo.png">
+<img style="width: 200px;" src="assets/img/watcher_logo.png">
 </div>
         <span class="card-title center-align">Tarlac Road Watcher</span>
         <div class="row">
@@ -22,7 +22,7 @@ var loginView = Vue.component('login-view', {
         </div>
       </div>
       <div class="card-action right-align">
-        <router-link to="/main" class="btn blue-accent-2 waves-effect waves-light btn-large" style="width: 100%;">LOGIN</router-link>
+        <router-link to="/main" class="btn blue waves-effect waves-light btn-large" style="width: 100%;">LOGIN</router-link>
       </div>
     </form>
   </div>

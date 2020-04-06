@@ -44,3 +44,8 @@ header, main, footer {
 
   
 /* FOR MAIN SIDENAV.  DO NOT TOUCH */
+
+
+.card {
+  box-shadow: none !important;
+}

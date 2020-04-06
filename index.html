@@ -19,6 +19,8 @@
         <!-- Views -->
         <script src="views/login.js"></script>
         <script src="views/main.js"></script>
+        <script src="views/employees.js"></script>
+        <script src="views/documentation.js"></script>
 
         <!-- Components -->
         <script src="components/nav.js"></script>
@@ -45,7 +47,21 @@
         },
         {
             path:'/main',
-            component: mainView
+            component: mainView,
+            children: [
+                {
+                    path: 'documentation',
+                    component: documentationView
+                },
+                {
+                    path: 'employees',
+                    component: employeesView
+                },
+                {
+                    path: 'new-employee',
+                    component: newEmployeeView
+                }
+            ]
         }
     ]
     let router = new VueRouter({
